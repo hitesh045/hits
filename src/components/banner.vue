@@ -1,7 +1,7 @@
 <template>
   <div class="mb-4 main-title text-waight-bold">
-    <div class="text">Yes,There's An Artist inside You</div>
-    <!-- <div class="text">Hi Hitesh Here</div> -->
+    <!-- <div class="text">Yes,There's An Artist inside You</div>
+    <div class="text">Hi Hitesh Here</div> -->
     <div class="local-scroll-cont">
       <a href="#section06"><span></span></a>
     </div>

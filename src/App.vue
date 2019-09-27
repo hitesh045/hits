@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <header-Section />
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,7 +8,14 @@
     <router-view />
   </div>
 </template>
-
+<script>
+import headerSection from "@/components/header-section.vue";
+export default {
+  components: {
+    headerSection
+  }
+};
+</script>
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
