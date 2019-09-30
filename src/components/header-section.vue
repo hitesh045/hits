@@ -30,7 +30,7 @@
       <div class="container">
         <b-collapse id="nav-collapse" class="header-info" is-nav>
           <b-navbar-nav class="section-link">
-            <b-nav-item to="/registro/0" class="registro-link mr-4" active
+            <b-nav-item to="#" class="registro-link mr-4" active
               >REGISTRO</b-nav-item
             >
             <b-nav-item to="/about" class="about-link mr-4"
@@ -47,9 +47,7 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="login-link-section">
             <b-nav-form class="login-box">
-              <b-nav-item to="/get-in" class="login-link mr-4"
-                >ENTRAR</b-nav-item
-              >
+              <b-nav-item to="/" class="login-link mr-4">ENTRAR</b-nav-item>
             </b-nav-form>
             <div
               class="my-auto menuicon"
