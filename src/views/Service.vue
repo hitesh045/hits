@@ -6,6 +6,7 @@
     <!-- <animatedBannerSection /> -->
     <!-- <sidenavSection /> -->
     <!-- <sliderButtonSection /> -->
+    <buttonAnimationSection />
   </div>
 </template>
 
@@ -17,6 +18,7 @@
 // import animatedBannerSection from "@/components/animated-banner.vue";
 // import sidenavSection from "@/components/sidenav.vue";
 // import sliderButtonSection from "@/components/sliderButton.vue";
+import buttonAnimationSection from "@/components/button-animation.vue";
 export default {
   name: "home",
   components: {
@@ -25,7 +27,8 @@ export default {
     // earthSection,
     // animatedBannerSection,
     // sidenavSection,
-    // sliderButtonSection
+    // sliderButtonSection,
+    buttonAnimationSection
   }
 };
 </script>

@@ -10,7 +10,7 @@
           <b-img v-bind:src="Logo" alt="Heroes Deldinero" class="heroesLogo" />
         </b-navbar-brand>
         <div
-          class="my-auto menuicon"
+          class="my-auto menuicon bt-menu"
           v-on:click="toggleMenu()"
           v-bind:class="{ closer: closed }"
         >
@@ -30,31 +30,30 @@
       <div class="container">
         <b-collapse id="nav-collapse" class="header-info" is-nav>
           <b-navbar-nav class="section-link">
-            <b-nav-item to="#" class="registro-link mr-4" active
-              >REGISTRO</b-nav-item
+            <b-nav-item to="/service" class="registro-link mr-4" active
+              >Service</b-nav-item
             >
             <b-nav-item to="/about" class="about-link mr-4"
-              >ACERCA DE</b-nav-item
+              >About US</b-nav-item
             >
           </b-navbar-nav>
           <b-navbar-brand to="/" class="mx-auto header-logo">
-            <b-img
-              v-bind:src="Logo"
-              alt="Heroes Deldinero"
-              class="heroesLogo"
-            />
+            <b-img v-bind:src="Logo" alt="Logo" class="heroesLogo" />
           </b-navbar-brand>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="login-link-section">
             <b-nav-form class="login-box">
-              <b-nav-item to="/" class="login-link mr-4">ENTRAR</b-nav-item>
+              <b-nav-item to="/" class="login-link mr-4">login</b-nav-item>
             </b-nav-form>
             <div
-              class="my-auto menuicon"
+              class="my-auto menuicon bt-menu"
               v-on:click="toggleMenu()"
               v-bind:class="{ closer: closed }"
             >
-              <div class="m-auto hamlogo1"></div>
+              <!-- <div class="m-auto hamlogo1"></div> -->
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
             </div>
           </b-navbar-nav>
         </b-collapse>
@@ -115,19 +114,19 @@ export default {
         .registro-link {
           // margin-bottom: -1px;
           border-bottom: 1px solid transparent;
-          .nav-link {
-            color: white;
-            font-size: 0.7rem;
-            padding: 1.7rem 0;
-          }
-          .nav-link:hover {
-            color: blue;
-          }
-          .router-link-exact-active {
-            margin-bottom: -1px;
-            border-bottom: 1px solid blue;
-            color: blue;
-          }
+          // .nav-link {
+          //   color: white;
+          //   font-size: 0.7rem;
+          //   padding: 1.7rem 0;
+          // }
+          // .nav-link:hover {
+          //   color: blue;
+          // }
+          // .router-link-exact-active {
+          //   margin-bottom: -1px;
+          //   border-bottom: 1px solid blue;
+          //   color: blue;
+          // }
         }
         .about-link {
           // margin-bottom: -1px;
@@ -185,13 +184,54 @@ export default {
     border-bottom: 2px solid white;
     border-top: 2px solid white;
     cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
   }
   .menuicon:hover {
     .hamlogo1 {
+      // color: #64686a;
       border-bottom: 2px solid blue;
       border-top: 2px solid blue;
       cursor: pointer;
     }
+  }
+  .menuicon:hover {
+    .bar {
+      // color: #64686a;
+      background-color: blue;
+      // border-top: 2px solid blue;
+      cursor: pointer;
+    }
+  }
+  .bar {
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
+  .bar:nth-child(1):after {
+    transition-delay: 0.1s;
+    background-position: left bottom;
+  }
+  .bar:nth-child(2):after {
+    transition-delay: 0.2s;
+    background-position: left bottom;
+  }
+  .bar:nth-child(3):after {
+    transition-delay: 0.3s;
+    background-position: left bottom;
+  }
+  .bar:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #a6abab;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    transition: 0.3s;
   }
 }
 .sidebar-main-section {
@@ -272,5 +312,16 @@ export default {
   .bar3 {
     transform: rotate(-45deg) translate(4px, -6px);
   }
+}
+.bt-menu {
+  min-width: 115px;
+  height: 70px;
+  border-right: 1px solid #e6eaea;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.bt-menu:hover {
+  color: #64686a;
 }
 </style>
