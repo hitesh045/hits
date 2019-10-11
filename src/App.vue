@@ -9,7 +9,9 @@
   </div>
 </template>
 <script>
-import headerSection from "@/components/header-section.vue";
+// import headerSection from "@/components/header-section.vue";
+import headerSection from "@/components/scroller-header.vue";
+// import headerSection from "@/components/scroll-header.vue";
 export default {
   components: {
     headerSection

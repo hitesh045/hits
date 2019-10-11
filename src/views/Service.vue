@@ -5,11 +5,12 @@
     <earthSection />
     <animatedBannerSection />
     <sidenavSection />
-    <sliderButtonSection /> -->
+    <sliderButtonSection />
     <buttonAnimationSection />
     <imageAnimationSection />
-    <creativeBorderBoxSection />
+    <creativeBorderBoxSection /> -->
     <!-- <glowingTextSection /> -->
+    <checkboxSection />
   </div>
 </template>
 
@@ -21,10 +22,11 @@
 // import animatedBannerSection from "@/components/animated-banner.vue";
 // import sidenavSection from "@/components/sidenav.vue";
 // import sliderButtonSection from "@/components/sliderButton.vue";
-import buttonAnimationSection from "@/components/button-animation.vue";
-import imageAnimationSection from "@/components/image-animation.vue";
-import creativeBorderBoxSection from "@/components/creative-border-box.vue";
-// import glowingTextSection from "@/components/glowing-text-animation.vue";
+// import buttonAnimationSection from "@/components/button-animation.vue";
+// import imageAnimationSection from "@/components/image-animation.vue";
+// import creativeBorderBoxSection from "@/components/creative-border-box.vue";
+import glowingTextSection from "@/components/glowing-text-animation.vue";
+import checkboxSection from "@/components/checkbox.vue";
 
 export default {
   name: "home",
@@ -35,10 +37,11 @@ export default {
     // animatedBannerSection,
     // sidenavSection,
     // sliderButtonSection,
-    buttonAnimationSection,
-    imageAnimationSection,
-    creativeBorderBoxSection
-    // glowingTextSection
+    // buttonAnimationSection,
+    // imageAnimationSection,
+    // creativeBorderBoxSection,
+    glowingTextSection,
+    checkboxSection
   }
 };
 </script>
