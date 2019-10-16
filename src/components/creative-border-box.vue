@@ -1,22 +1,24 @@
 <template>
   <div class="main-content">
     <div class="container">
-      <div class="box">
-        <div class="content">
-          <h2>
-            01
-          </h2>
-          <h3>Service one</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-          <a href="#">Read More</a>
+      <div v-for="data in dataContent" v-bind:key="data.index">
+        <div
+          :data-aos="data.fadeDirection"
+          data-aos-anchor-placement="top-center"
+        >
+          <div class="box" :class="data.productClass">
+            <div class="content">
+              <h2>
+                {{ data.number }}
+              </h2>
+              <h3>{{ data.maintitle }}</h3>
+              <p>{{ data.content }}</p>
+              <a href="#">{{ data.buttonText }}</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="box">
+      <!-- <div class="box">
         <div class="content">
           <h2>
             02
@@ -60,10 +62,56 @@
           </p>
           <a href="#">Read More</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      dataContent: [
+        {
+          number: "01",
+          maintitle: "Service One",
+          content:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          buttonText: "Read More",
+          productClass: "first-color",
+          fadeDirection: "fade-up"
+        },
+        {
+          number: "02",
+          maintitle: "Service Two",
+          content:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          buttonText: "Read More",
+          productClass: "second-color",
+          fadeDirection: "fade-right"
+        },
+        {
+          number: "03",
+          maintitle: "Service Three",
+          content:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          buttonText: "Read More",
+          productClass: "third-color",
+          fadeDirection: "fade-down"
+        },
+        {
+          number: "04",
+          maintitle: "Service Four",
+          content:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          buttonText: "Read More",
+          productClass: "four-color",
+          fadeDirection: "fade-left"
+        }
+      ]
+    };
+  }
+};
+</script>
 <style lang="scss" scoped>
 .main-content {
   margin: 0;
@@ -144,17 +192,31 @@
     // h2:nth-child(1) {
     //   color: #ff0057(255, 255, 255, 0.05);
     // }
-    .box:nth-child(1):before {
-      background: linear-gradient(315deg, #ff0057, #e64a19);
-    }
-    .box:nth-child(2):before {
-      background: linear-gradient(315deg, #89ff00, #00bcd4);
-    }
-    .box:nth-child(3):before {
-      background: linear-gradient(315deg, #e91e63, #5d02ff);
-    }
-    .box:nth-child(4):before {
-      background: linear-gradient(315deg, #ff0000, #ffc107);
+    // .box:nth-child(1):before {
+    //   background: linear-gradient(315deg, #ff0057, #e64a19);
+    // }
+    // .box:nth-child(2):before {
+    //   background: linear-gradient(315deg, #89ff00, #00bcd4);
+    // }
+    // .box:nth-child(3):before {
+    //   background: linear-gradient(315deg, #e91e63, #5d02ff);
+    // }
+    // .box:nth-child(4):before {
+    //   background: linear-gradient(315deg, #ff0000, #ffc107);
+    // }
+    .box {
+      &.first-color:before {
+        background: linear-gradient(315deg, #ff0057, #e64a19);
+      }
+      &.second-color:before {
+        background: linear-gradient(315deg, #89ff00, #00bcd4);
+      }
+      &.third-color:before {
+        background: linear-gradient(315deg, #e91e63, #5d02ff);
+      }
+      &.four-color:before {
+        background: linear-gradient(315deg, #ff0000, #ffc107);
+      }
     }
     .box:hover .content h2 {
       top: -50px;
