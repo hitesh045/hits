@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <activeStateHeaderSection />
     <h1 class="cccc">This is an about page</h1>
     <div
       data-quickedit-entity-id="paragraph/10"
@@ -31,7 +32,11 @@
   </div>
 </template>
 <script>
+import activeStateHeaderSection from "@/components/active-state-header.vue";
 export default {
+  components: {
+    activeStateHeaderSection
+  },
   data() {
     return {};
   }

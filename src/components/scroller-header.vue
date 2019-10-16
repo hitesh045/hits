@@ -197,16 +197,6 @@ export default {
     return {};
   },
   mounted() {
-    // window.onscroll = () => {
-    //   const nav = document.querySelector("#navbar");
-    //   if (this.scrollY > 30) {
-    //     nav.className = "mainScroll";
-    //   } else {
-    //     console.log("hdhdh", this.$route.params);
-    //     nav.className = "scroll";
-    //   }
-    // };
-
     window.onscroll = () => {
       if (
         document.documentElement.scrollTop > "150" ||
