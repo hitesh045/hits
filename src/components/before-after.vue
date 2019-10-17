@@ -11,6 +11,9 @@
               tinished Projects ma and high quality and on time
             </p>
           </div>
+          <div class="title-underline">
+            <h1 class="text-center pt-5 text-uppercase">we serve with</h1>
+          </div>
         </header>
       </div>
     </div>
@@ -75,5 +78,34 @@
 }
 .delimiter div:after {
   right: -7px;
+}
+.title-underline {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  h1 {
+    font-size: 2.2rem;
+    color: #4e65af;
+  }
+}
+.title-underline::after,
+.title-underline::before {
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  width: 40%;
+}
+.title-underline::before {
+  left: 50%;
+  background-image: linear-gradient(to left, transparent 0%, #f16366 117%);
+  background-repeat: repeat-x;
+}
+.title-underline::after {
+  right: 50%;
+  background-image: linear-gradient(to left, #f16366 0%, transparent 100%);
+  background-repeat: repeat-x;
 }
 </style>

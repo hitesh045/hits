@@ -1,11 +1,11 @@
 <template>
   <div>
-    <!-- <banner-Section />
-    <accordian-Section />
-    <earthSection />
-    <animatedBannerSection />
-    <sidenavSection />
-    <sliderButtonSection /> -->
+    <!-- <banner-Section /> -->
+    <!-- <accordian-Section /> -->
+    <!-- <earthSection /> -->
+    <!-- <animatedBannerSection /> -->
+    <!-- <sidenavSection /> -->
+    <!-- <sliderButtonSection /> -->
     <!-- <buttonAnimationSection /> -->
     <!-- <imageAnimationSection /> -->
     <!-- <creativeBorderBoxSection /> -->

@@ -11,15 +11,15 @@
             <div class="block-18 text-left">
               <strong class="number" id="s1">
                 <!--****** Vue number scroll pulgin is work only refresh page ****-->
-                <!-- <vns :start="0" :end="data.number" :times="30" :speed="150" /> -->
-                <span
+                <vns :start="0" :end="data.number" :times="30" :speed="150" />
+                <!-- <span
                   class="numscroller"
                   data-min="1"
                   data-max="1000"
                   data-delay="5"
                   data-increment="10"
                   >1000</span
-                >
+                > -->
 
                 <!-- <animated-number
                   :value="value"
