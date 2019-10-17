@@ -4,7 +4,7 @@
       <span>Hello, It's me</span>
       <button>Pickles!</button>
     </nav> -->
-    <div class="background pb-5 ">
+    <div class="background pb-5">
       <nav
         class="navbar navbar-expand-lg navbar-togglable navbar-dark fixed-top "
         id="mainnav"

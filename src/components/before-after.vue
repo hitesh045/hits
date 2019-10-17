@@ -1,19 +1,26 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <header class="text-center col-md-6 col-md-offset-3">
-        <h2>Before After Triangle</h2>
-        <div class="delimiter"><div></div></div>
-        <p class="section-entry">
-          The comments of some of our customers 100% satisfied with the tinished
-          Projects ma and high quality and on time
-        </p>
-      </header>
+  <div class="before-after-section">
+    <div class="container">
+      <div class="row">
+        <header class="col-md-6 col-md-offset-3">
+          <div class="text-center">
+            <h2>Before After Triangle</h2>
+            <div class="delimiter"><div></div></div>
+            <p class="section-entry">
+              The comments of some of our customers 100% satisfied with the
+              tinished Projects ma and high quality and on time
+            </p>
+          </div>
+        </header>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.before-after-section {
+  margin: 200px 300px;
+}
 .h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;

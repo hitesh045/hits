@@ -13,6 +13,7 @@
     <!-- <checkboxSection /> -->
     <backgroundThemeSection />
     <beforeAfterSection />
+    <counterNumberSection />
   </div>
 </template>
 
@@ -31,6 +32,7 @@ import glowingTextSection from "@/components/glowing-text-animation.vue";
 import checkboxSection from "@/components/checkbox.vue";
 import backgroundThemeSection from "@/components/background-theme.vue";
 import beforeAfterSection from "@/components/before-after.vue";
+import counterNumberSection from "@/components/counter-number.vue";
 
 export default {
   name: "home",
@@ -47,7 +49,8 @@ export default {
     glowingTextSection,
     checkboxSection,
     backgroundThemeSection,
-    beforeAfterSection
+    beforeAfterSection,
+    counterNumberSection
   }
 };
 </script>
