@@ -11,9 +11,10 @@
     <!-- <creativeBorderBoxSection /> -->
     <!-- <glowingTextSection /> -->
     <!-- <checkboxSection /> -->
-    <backgroundThemeSection />
-    <beforeAfterSection />
-    <counterNumberSection />
+    <!-- <backgroundThemeSection />
+    <beforeAfterSection /> -->
+    <!-- <counterNumberSection /> -->
+    <hamburgerSection />
   </div>
 </template>
 
@@ -33,6 +34,7 @@ import checkboxSection from "@/components/checkbox.vue";
 import backgroundThemeSection from "@/components/background-theme.vue";
 import beforeAfterSection from "@/components/before-after.vue";
 import counterNumberSection from "@/components/counter-number.vue";
+import hamburgerSection from "@/components/hamburger.vue";
 
 export default {
   name: "home",
@@ -50,7 +52,8 @@ export default {
     checkboxSection,
     backgroundThemeSection,
     beforeAfterSection,
-    counterNumberSection
+    counterNumberSection,
+    hamburgerSection
   }
 };
 </script>
