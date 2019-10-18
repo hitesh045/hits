@@ -1,20 +1,22 @@
 <template>
   <div id="app">
-    <header-Section />
+    <!-- <header-Section /> -->
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link>|
+      <router-link to="/service">Service</router-link>|
+      <router-link to="/props">Props</router-link>
     </div>
     <router-view />
   </div>
 </template>
 <script>
 // import headerSection from "@/components/header-section.vue";
-import headerSection from "@/components/scroller-header.vue";
+// import headerSection from "@/components/scroller-header.vue";
 // import headerSection from "@/components/scroll-header.vue";
 export default {
   components: {
-    headerSection
+    // headerSection
   }
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Text Menu -->
     <div id="webapp_cover">
       <div id="menu_button">
         <input type="checkbox" id="menu_checkbox" />
@@ -8,6 +9,7 @@
         </label>
       </div>
     </div>
+    <!-- Cross Menu -->
     <input type="checkbox" id="hi" />
     <label class="menu" for="hi">
       <div class="bar"></div>
