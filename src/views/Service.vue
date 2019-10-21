@@ -11,10 +11,11 @@
     <!-- <creativeBorderBoxSection /> -->
     <!-- <glowingTextSection /> -->
     <!-- <checkboxSection /> -->
-    <!-- <backgroundThemeSection />
-    <beforeAfterSection /> -->
+    <!-- <backgroundThemeSection /> -->
+    <beforeAfterSection />
     <!-- <counterNumberSection /> -->
     <hamburgerSection />
+    <panoramaSection />
   </div>
 </template>
 
@@ -35,7 +36,7 @@ import backgroundThemeSection from "@/components/background-theme.vue";
 import beforeAfterSection from "@/components/before-after.vue";
 import counterNumberSection from "@/components/counter-number.vue";
 import hamburgerSection from "@/components/hamburger.vue";
-
+import panoramaSection from "@/components/panorama.vue";
 export default {
   name: "home",
   components: {
@@ -53,7 +54,8 @@ export default {
     backgroundThemeSection,
     beforeAfterSection,
     counterNumberSection,
-    hamburgerSection
+    hamburgerSection,
+    panoramaSection
   }
 };
 </script>

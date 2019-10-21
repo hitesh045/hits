@@ -95,8 +95,8 @@ body {
 }
 
 #menu_text_bar:before {
-  // content: "MENU";
-  content: "HITs";
+  content: "MENU";
+  // content: "HITs";
   position: absolute;
   top: 16px;
   right: 0;

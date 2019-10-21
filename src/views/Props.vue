@@ -2,7 +2,11 @@
   <div>
     <!--***** What is the Props *****-->
     <!--******* Props are the way components can accept data from components that include them (parent component)  **********-->
-    <propsContentSection company-name="Wohlig Technology" name="UI Developer" v-bind:myplaylist="myplaylist"/>
+    <propsContentSection
+      company-name="Wohlig Technology"
+      name="UI Developer"
+      v-bind:myplaylist="myplaylist"
+    />
     <!-- Pass array in the propsContentSection so it will pass data(json data to that child class(child props file)) -->
     <!-- So in this way we can pass multiple data to the its required .vue file -->
 
@@ -15,18 +19,18 @@ export default {
   name: "props",
   components: {
     propsContentSection
-    },
-     data() {
+  },
+  data() {
     return {
-      myplaylist:[
+      myplaylist: [
         {
-          name:"Hitesh",
+          name: "Hitesh"
         },
         {
-          name:"Roshan",
+          name: "Roshan"
         }
       ]
     };
-  },
   }
+};
 </script>
