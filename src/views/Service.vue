@@ -15,7 +15,8 @@
     <beforeAfterSection />
     <!-- <counterNumberSection /> -->
     <hamburgerSection />
-    <panoramaSection />
+    <!-- <panoramaSection /> -->
+    <fancyFormSection />
   </div>
 </template>
 
@@ -37,6 +38,7 @@ import beforeAfterSection from "@/components/before-after.vue";
 import counterNumberSection from "@/components/counter-number.vue";
 import hamburgerSection from "@/components/hamburger.vue";
 import panoramaSection from "@/components/panorama.vue";
+import fancyFormSection from "@/components/fancy-forms.vue";
 export default {
   name: "home",
   components: {
@@ -55,7 +57,8 @@ export default {
     beforeAfterSection,
     counterNumberSection,
     hamburgerSection,
-    panoramaSection
+    panoramaSection,
+    fancyFormSection
   }
 };
 </script>
