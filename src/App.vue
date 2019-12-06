@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!--  -->
     <!-- <header-Section /> -->
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
